@@ -8,4 +8,5 @@ Each time a vulnerability is found, the exploit will be patched on the palamod r
 
 ## Hacks:
 * Backpacks inventory can be used without a backpack
+* Voidstone can be used without actually have one, moreover, you can get rid of any item in you hotbar using the `.trash` command
 

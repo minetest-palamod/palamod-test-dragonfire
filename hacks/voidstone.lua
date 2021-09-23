@@ -9,3 +9,13 @@ local form = table.concat({
 })
 
 minetest.register_cheat("Voidstone", "Inventory", function() minetest.show_formspec("pala_dragonfire:voidstone", form) end)
+
+minetest.register_chatcommand("trash", {
+	func = function()
+		local move_act = InventoryAction("move")
+		move_act:from("current_player", "main", minetest.localplayer:get_wield_index())
+		move_act:to("detached:voidstone_trash", "main", 1)
+		move_act:apply()
+		return true, "Done."
+	end,
+})
