@@ -8,4 +8,4 @@ local form = table.concat({
 	"label[0.5,12.5;Inventory]",
 })
 
-minetest.register_cheat("PalaBackpack", "Inventory", function() minetest.show_formspec("df_blabla:pala_backpack", form) end)
+minetest.register_cheat("PalaBackpack", "Inventory", function() minetest.show_formspec("pala_dragonfire:backpack", form) end)
